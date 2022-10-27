@@ -31,7 +31,7 @@ function Todo() {
   function handleEdit() {
     setTodoList(
       todoList.map((t) => {
-        if (t.id === selectedTodo.id) return { ...t, name: inputText }
+        if (t.id === selectedTodo?.id) return { ...t, name: inputText }
         return t
       })
     )

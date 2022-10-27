@@ -1,4 +1,6 @@
-function App() {
+import UserInfo from './components/UserInfo'
+
+function Introducao() {
   const users = [
     {
       firstName: 'Antonio',
@@ -33,25 +35,4 @@ function App() {
   )
 }
 
-interface PropsUser {
-  firstName: string
-  lastName: string
-  isAdmin: boolean
-}
-
-function UserInfo(props: PropsUser) {
-  const { firstName, lastName, isAdmin } = props
-
-  return (
-    <>
-      <div>
-        <h1 className={`text-md font-bold ${isAdmin && 'text-green-500'}`}>
-          {firstName}
-          {!isAdmin ? lastName : 'oculto'}
-        </h1>
-      </div>
-    </>
-  )
-}
-
-export default App
+export default Introducao
