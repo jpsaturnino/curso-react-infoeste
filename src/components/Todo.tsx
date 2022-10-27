@@ -17,7 +17,6 @@ function Todo() {
   }
 
   function handleAdd() {
-    // adiciona uma nova task na lista de tasks
     setTodoList([
       ...todoList,
       { id: inputText.length - 1, name: inputText, done: false }
@@ -26,7 +25,6 @@ function Todo() {
   }
 
   function handleDelete(todoId: number) {
-    // remove uma task da lista de tasks
     setTodoList(todoList.filter((t) => t.id !== todoId))
   }
 
